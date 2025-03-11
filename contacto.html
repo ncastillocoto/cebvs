@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo.png">
+    <title>Contacto - VDS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="imagenes/logo.png" alt="Logo" class="h-16 w-auto object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold text-blue-900">Visión del Saber</h1>
+                        <p class="text-sm text-yellow-500">Excelencia Educativa</p>
+                    </div>
+                </div>
+    
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#inicio" class="nav-link group">
+                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Inicio</span>
+                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
+                    </a>
+                    <a href="index.html#programas" class="nav-link group">
+                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Programas</span>
+                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
+                    </a>
+                    <a href="index.html#admisiones" class="nav-link group">
+                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Admisiones</span>
+                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu fixed inset-0 bg-blue-900 z-40 transform translate-x-full transition-transform duration-300">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="index.html#inicio" class="text-white text-2xl hover:text-yellow-500 transition-colors">Inicio</a>
+            <a href="index.html#programas" class="text-white text-2xl hover:text-yellow-500 transition-colors">Programas</a>
+            <a href="index.html#admisiones" class="text-white text-2xl hover:text-yellow-500 transition-colors">Admisiones</a>
+        </div>
+    </div>
+
+    <!-- Hero Section de Contacto -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Contáctanos</h1>
+                <p class="text-xl text-gray-300">Estamos aquí para responder tus preguntas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Principal de Contacto -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Formulario de Contacto -->
+                <section class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-blue-900 mb-6">Envíanos un mensaje</h2>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Nombre</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-900 focus:ring-2 focus:ring-blue-900 focus:ring-opacity-20 transition-colors" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Apellido</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-900 focus:ring-2 focus:ring-blue-900 focus:ring-opacity-20 transition-colors" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Correo Electrónico</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-900 focus:ring-2 focus:ring-blue-900 focus:ring-opacity-20 transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Asunto</label>
+                            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-900 focus:ring-2 focus:ring-blue-900 focus:ring-opacity-20 transition-colors">
+                                <option>Información General</option>
+                                <option>Admisiones</option>
+                                <option>Programas Académicos</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Mensaje</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:border-blue-900 focus:ring-2 focus:ring-blue-900 focus:ring-opacity-20 transition-colors" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Información de Contacto -->
+                <section class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-blue-900 mb-6">Información de Contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="lucide-map-pin text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900">Dirección</h4>
+                                    <p class="text-gray-600">Ciudad de Panamá, Panamá</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="lucide-phone text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900">Teléfono</h4>
+                                    <p class="text-gray-600">+507 XXX-XXXX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="lucide-mail text-blue-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900">Email</h4>
+                                    <p class="text-gray-600">info@visiondelsaber.edu.pa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horario de Atención -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-blue-900 mb-6">Horario de Atención</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Lunes - Viernes</span>
+                                <span class="text-blue-900 font-semibold">7:00 AM - 3:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <i class="lucide-graduation-cap text-blue-900 h-6 w-6"></i>
+                        <span class="text-xl font-bold text-blue-900">Visión del Saber</span>
+                    </div>
+                    <p class="text-gray-600">
+                        Formando líderes con excelencia y valores desde 1995.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Enlaces</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Programas</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Admisiones</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Calendario</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Ciudad de Panamá, Panamá</li>
+                        <li>Tel: +507 XXX-XXXX</li>
+                        <li>info@visiondelsaber.edu.pa</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Newsletter</h4>
+                    <div class="flex">
+                        <input type="email" placeholder="Tu correo electrónico" 
+                               class="flex-1 px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:border-blue-900">
+                        <button class="bg-blue-900 text-white px-6 py-2 rounded-r-full hover:bg-blue-800 transition-colors">
+                            →
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600">
+                <p>© 2025 Colegio Visión del Saber. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar los iconos de Lucide
+        lucide.createIcons();
+
+        // Manejo del menú móvil
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuIcon = document.querySelector('.lucide-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-full');
+            if (mobileMenu.classList.contains('translate-x-full')) {
+                menuIcon.classList.remove('lucide-x');
+                menuIcon.classList.add('lucide-menu');
+            } else {
+                menuIcon.classList.remove('lucide-menu');
+                menuIcon.classList.add('lucide-x');
+            }
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                menuIcon.classList.remove('lucide-x');
+                menuIcon.classList.add('lucide-menu');
+            });
+        });
+
+        // Efecto de scroll en el header
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Validación del formulario
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Aquí puedes agregar la lógica para enviar el formulario
+            alert('Mensaje enviado con éxito. Nos pondremos en contacto contigo pronto.');
+            form.reset();
+        });
+    </script>
+</body>
+</html>    

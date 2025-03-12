@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos Visión - CE Visión del Saber</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+</head>
+<body>
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="imagenes/panama.png" alt="Panamá" class="h-12 w-auto object-contain">
+                    <img src="imagenes/logo.png" alt="Logo Visión del Saber" class="h-12 w-auto object-contain">                    
+                </div>
+                <!-- Botón del Menú hamburguesa -->
+                <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden p-2 bg-yellow-500 text-blue-900 rounded-md focus:outline-none z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+                <!-- Menú de Navegación -->
+                <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
+                    <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
+                    <a href="somosvision.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Somos Visión</a>
+                    <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="#oferta-educativa" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
+                    <a href="#plataformas" class="menu-navegacion hover:text-yellow-500 transition-colors">Plataformas</a>
+                    <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
+                    <!-- Botón para cerrar en móviles -->
+                    <button id="close-menu" class="md:hidden mt-8 text-gray-200 text-lg underline">Cerrar</button>
+                </nav>
+            </div>
+        </div>
+    </header>  
+
+    <main class="pt-24 container mx-auto px-4">
+        <section class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-900">Somos Visión</h1>
+            <p class="text-lg text-gray-600 mt-4">Conoce más sobre nuestra historia, misión y visión.</p>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Historia</h2>
+                    <p class="text-gray-600 mt-4 text-center">
+                        El Centro Educativo Bilingüe Visión del Saber situado en el corregimiento de
+                        Vista Alegre, distrito de Arraiján, inicia sus labores educativas, en Marzo
+                        de 2003, teniendo una excelente acogida en la comunidad de Vista Alegre
+                        y sus alrededores.
+                        Sus fundadores son: El Capitán Gregorio Gutiérrez, la Profesora Olivia
+                        Montuto de Gutiérrez e hijos. Desde su inicio este colegio ha sido dirigido
+                        por las profesoras Olivia de Gutiérrez y Nelda de Gómez.
+                        <br><br>
+                        El nombre se da por ideas de sus fundadores quienes querían
+                        relacionarlo con una visión hacia el futuro. De allí surge el nombre Visión
+                        del Saber y el lema “Formación de Calidad para el Futuro”.
+                        Imparte enseñanza en el área bilingüe y teniendo como base los valores
+                        que son fundamentales para el desarrollo, intelectual, social y moral de
+                        nuestra comunidad educativa.
+                        De esta forma se ha dado a conocer desde el nivel pre-escolar al noveno
+                        grado, y teniendo como visión desarrollar bachilleres que vayan acorde
+                        con las exigencias educativas actuales.
+                        Hoy día cuenta con una matrícula de más de 500 estudiantes, los cuales
+                        tienen un dominio académico bilingüe. Además de contar con un personal
+                        docente calificado en cada una de sus áreas.
+                        <br><br>
+                        A partir del 2007 el Colegio inicia la Banda de liras y tambores; ya para
+                        el 2011 cuenta con una banda de música y el 4 de noviembre de 2012
+                        obtuvo el primer lugar como mejor Banda de Música, galardón otorgado
+                        por el Municipio de Arraiján. En el 2013, la Banda de Música Visión del
+                        Saber, se presenta totalmente renovada en instrumentos musicales y una
+                        vez más obtiene el primer lugar.
+                        <br><br>
+                        La Banda de Música Visión del Saber, es dirigida por el profesor Ricardo
+                        Simití, los instructores Elkjar Gordón y Yulianna Almanza y su coordinador
+                        general Teacher Gregorio Alberto Gutiérrez Montuto.
+                        <br><br>
+                        Además cuenta con todo el apoyo de padres y madres de familia que
+                        junto con el colegio han aunado esfuerzos para alcanzar el éxito.
+                    </p>
+                </div>
+                <div>
+                    <img src="imagenes/historia.jpg" alt="Nuestra historia" class="w-full rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="imagenes/mision.jpg" alt="Nuestra misión" class="w-full rounded-lg shadow-md">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Misión</h2>
+                    <p class="text-gray-600 mt-4 text-center">
+                        Para lograr un óptimo nivel de aprendizaje adecuado a las exigentes demandas del nuevo milenio, nuestro centro educativo aplica los recursos de la tecnología, nuevos métodos y técnicas en la enseñanza del inglés y proveemos la capacitación de los docentes en las últimas estrategias educativas dirigidos a orientar un proceso interactivo de enseñanza–aprendizaje que garanticen el desarrollo integral del individuo con un sentido de responsabilidad hacia la formación y la práctica de los valores cívicos, éticos y morales.                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Visión</h2>
+                    <p class="text-gray-600 mt-4 text-center">
+                        Ser la Institución de mayor renombre a nivel nacional e internacional, brindando así, las herramientas tecnológicas, intelectuales, sociales y morales; para que los estudiantes puedan tener un excelente criterio de discernimiento racional–emocional sobre lo que deseen ser.
+                        De esta forma nos daremos a conocer desde el nivel Pre–Escolar al universitario; siendo el idioma Inglés uno de los pilares fundamentales de nuestro proceso de enseñanza–aprendizaje.
+                        Tomando como base estos planteamientos, nos especializamos en formar estudiantes capaces de aplicar el razonamiento crítico, reflexivo y analítico, construyendo así su propia identidad en la que se pueda lograr el desarrollo de sus habilidades y destrezas, haciendo frente a las exigencias de la educación de nuestros tiempos.
+
+                    </p>
+                </div>
+                <div>
+                    <img src="imagenes/vision.jpg" alt="Nuestra visión" class="w-full rounded-lg shadow-md">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-6 text-center">
+        <p class="text-gray-600">© 2025 Centro Educativo Bilingüe Visión del Saber. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

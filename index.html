@@ -20,29 +20,24 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-4">
-                    <img src="imagenes/panama.png" alt="Panamá" class="h-16 w-auto object-contain">
-                    <img src="imagenes/logo.png" alt="Logo Visión del Saber" class="h-16 w-auto object-contain">                    
+                    <img src="imagenes/panama.png" alt="Panamá" class="h-12 w-auto object-contain">
+                    <img src="imagenes/logo.png" alt="Logo Visión del Saber" class="h-12 w-auto object-contain">                    
                 </div>
-                <nav class="flex items-center space-x-8">
-                    <a href="#inicio" class="menu-navegacion group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Inicio</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="#admisiones" class="menu-navegacion group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Admisiones</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="#oferta-educativa" class="menu-navegacion group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Oferta Educativa</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="#plataformas" class="menu-navegacion group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Plataformas</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="contacto.html" class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-colors">
-                        Contáctanos
-                    </a>
+                <!-- Botón del Menú hamburguesa -->
+                <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden p-2 bg-yellow-500 text-blue-900 rounded-md focus:outline-none z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+                <!-- Menú de Navegación -->
+                <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
+                    <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
+                    <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="#oferta-educativa" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
+                    <a href="#plataformas" class="menu-navegacion hover:text-yellow-500 transition-colors">Plataformas</a>
+                    <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
+                    <!-- Botón para cerrar en móviles -->
+                    <button id="close-menu" class="md:hidden mt-8 text-gray-200 text-lg underline">Cerrar</button>
                 </nav>
             </div>
         </div>
@@ -51,12 +46,11 @@
     <!-- Banner Inicial -->
     <section id="inicio" class="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900">
         <div class="container mx-auto px-4 py-20">
-            <div class="grid grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-2 gap-12 items-center ">
                 <div class="texto-principal text-white space-y-6 animate-fade-in">
-                    <h2 class="text-5xl font-bold leading-tight">
-                        Formando los
-                        <span class="text-yellow-500">líderes</span>
-                        del mañana
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                        Transformando <span class="text-yellow-500">vidas</span>
+                        <br>hacia la excelencia
                     </h2>
                     <p class="text-lg text-gray-300">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure earum quod distinctio dolores eveniet! Doloribus quasi nobis laboriosam facilis officiis veniam a voluptas veritatis deleniti, alias deserunt possimus nisi exercitationem. lorem
@@ -72,11 +66,13 @@
                 </div>
                 <div class="relative">
                     <div class="bg-yellow-500 w-64 h-64 rounded-full absolute -top-8 -right-8 opacity-20"></div>
-                    <div class="bg-blue-700 w-full h-96 rounded-2xl relative overflow-hidden">
-                        <video autoplay loop muted playsinline>
+                    <div class="bg-blue-700 w-full rounded-2xl overflow-hidden relative">
+                        <div class="w-full h-full aspect-video">
+                            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
                             <source src="videos/New Generation 2024 -  VDS Marching Band.mp4" type="video/mp4">
                             Tu navegador no soporta videos.
-                        </video>
+                                </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,19 +84,19 @@
     <section id="noticias" class="bg-gray-50 py-20">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-blue-900 mb-4">Últimas Noticias</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Últimas Noticias</h2>
                 <p class="text-gray-600">Mantente actualizado con nuestras actividades y logros</p>
             </div>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <!-- Noticia 1 -->
-                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                    <div class="contenedor-imagen-noticia relative">
-                        <img src="https://placehold.co/400x250" alt="Feria de Ciencias 2025" class="imagen-noticia w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
+                        <div class="contenedor-imagen-noticia relative h-64">
+                        <img src="https://placehold.co/400x250" alt="Feria de Ciencias 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
                             Evento
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-blue-900 mb-2">
                             Feria de Ciencias 2025
                         </h3>
@@ -113,14 +109,14 @@
                     </div>
                 </div>
                 <!-- Noticia 2 -->
-                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                    <div class="contenedor-imagen-noticia relative">
-                        <img src="https://placehold.co/400x250" alt="Robótica 2024" class="imagen-noticia w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
+                        <div class="contenedor-imagen-noticia relative h-64">
+                        <img src="https://placehold.co/400x250" alt="Robótica 2024" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
                             Evento
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-blue-900 mb-2">
                             Robótica 2024
                         </h3>
@@ -133,14 +129,14 @@
                     </div>
                 </div>
                 <!-- Noticia 3 -->
-                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-shadow">
-                    <div class="contenedor-imagen-noticia relative">
-                        <img src="https://placehold.co/400x250" alt="VDS Panthers 2025" class="imagen-noticia w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
+                        <div class="contenedor-imagen-noticia relative h-64">
+                        <img src="https://placehold.co/400x250" alt="VDS Panthers 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
                             Evento
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-blue-900 mb-2">
                             VDS Panthers 2025
                         </h3>
@@ -160,12 +156,12 @@
     <section id="actividades" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-blue-900 mb-4">Actividades Extracurriculares</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Actividades Extracurriculares</h2>
                 <p class="text-gray-600 max-w-3xl mx-auto">
                     En Visión del Saber fomentamos el desarrollo integral a través de diversas actividades donde nuestros estudiantes pueden destacar y desarrollar sus talentos.
                 </p>
             </div>
-            <div class="grid grid-cols-5 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <!-- Deportes -->
                 <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                     <div class="h-52 overflow-hidden">
@@ -264,10 +260,10 @@
     <section id="plataformas" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center">
-                <h2 class="text-4xl font-bold text-blue-900">Nuestras Plataformas Educativas</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Nuestras Plataformas Educativas</h2>
                 <br><br><br><br>
             </div>
-            <div class="grid grid-cols-5 gap-40 justify-center items-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-center items-center">
                 <img src="imagenes/mereb-logo.png" alt="iMEREB" class="h-auto w-auto ">
                 <img src="imagenes/google-workspace.png" alt="Google Workspace" class="h-auto w-auto">
                 <img src="imagenes/hmh-logo.png" alt="HMH Harcourt" class="h-auto w-auto">
@@ -281,10 +277,10 @@
     <section class="bg-blue-900 py-20">
         <div class="container mx-auto px-4 text-center">
             <!-- Contenedor exclusivo para la imagen -->
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="imagenes/mascota.png" alt="Mascota" style="display: inline-block; max-width: 500px; margin: 0 auto;">
+            <div class="flex justify-center mb-8">
+                <img src="imagenes/mascota.png" alt="Mascota" class="max-w-xs md:max-w-md lg:max-w-lg">
             </div>
-            <h2 class="text-3xl font-bold text-white mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">
                 ¿Listo para ser parte de nuestra comunidad?
             </h2>
             <button class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
@@ -296,7 +292,7 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
         <div class="container mx-auto px-4 py-4">
-            <div class="grid grid-cols-3 gap-">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Columna 1 -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-2">
@@ -306,7 +302,6 @@
                     <p class="text-gray-600">
                         Formando líderes con excelencia y valores desde 1995.
                     </p>
-                    <img src="imagenes/logo.png" alt="">
                 </div>
 
                 <!-- Columna 3: Datos de Contacto -->
@@ -331,5 +326,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('menu').classList.add('hidden');
+        });
+
+        // Opcional: Cierra el menú al hacer clic en un enlace (en móviles)
+        document.querySelectorAll('.menu-navegacion').forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 768) { // Solo en móviles
+                    document.getElementById('menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

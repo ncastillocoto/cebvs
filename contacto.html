@@ -16,30 +16,28 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-4">
-                    <img src="imagenes/logo.png" alt="Logo" class="h-16 w-auto object-contain">
-                    <div>
-                        <h1 class="text-2xl font-bold text-blue-900">Visión del Saber</h1>
-                        <p class="text-sm text-yellow-500">Excelencia Educativa</p>
-                    </div>
+                    <img src="imagenes/panama.png" alt="Panamá" class="h-12 w-auto object-contain">
+                    <img src="imagenes/logo.png" alt="Logo Visión del Saber" class="h-12 w-auto object-contain">                    
                 </div>
-    
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="index.html#inicio" class="nav-link group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Inicio</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="index.html#programas" class="nav-link group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Programas</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
-                    <a href="index.html#admisiones" class="nav-link group">
-                        <span class="text-blue-900 group-hover:text-yellow-500 transition-colors">Admisiones</span>
-                        <div class="h-0.5 w-0 group-hover:w-full bg-yellow-500 transition-all duration-300"></div>
-                    </a>
+                <!-- Botón del Menú hamburguesa -->
+                <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden p-2 bg-yellow-500 text-blue-900 rounded-md focus:outline-none z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+                <!-- Menú de Navegación -->
+                <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
+                    <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
+                    <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="#oferta-educativa" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
+                    <a href="#plataformas" class="menu-navegacion hover:text-yellow-500 transition-colors">Plataformas</a>
+                    <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
+                    <!-- Botón para cerrar en móviles -->
+                    <button id="close-menu" class="md:hidden mt-8 text-gray-200 text-lg underline">Cerrar</button>
                 </nav>
             </div>
         </div>
-    </header>
+    </header>  
 
     <!-- Menú móvil -->
     <div class="mobile-menu fixed inset-0 bg-blue-900 z-40 transform translate-x-full transition-transform duration-300">
@@ -153,8 +151,9 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
-        <div class="container mx-auto px-4 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
+        <div class="container mx-auto px-4 py-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Columna 1 -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-2">
                         <i class="lucide-graduation-cap text-blue-900 h-6 w-6"></i>
@@ -164,35 +163,26 @@
                         Formando líderes con excelencia y valores desde 1995.
                     </p>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Enlaces</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Programas</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Admisiones</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-yellow-500">Calendario</a></li>
-                    </ul>
-                </div>
+
+                <!-- Columna 3: Datos de Contacto -->
                 <div>
                     <h4 class="text-lg font-semibold text-blue-900 mb-4">Contacto</h4>
                     <ul class="space-y-2 text-gray-600">
-                        <li>Ciudad de Panamá, Panamá</li>
+                        <li>Vista Alegre, Panamá</li>
+                        <li>Correo: info@visiondelsaber.edu.pa</li>
                         <li>Tel: +507 XXX-XXXX</li>
-                        <li>info@visiondelsaber.edu.pa</li>
                     </ul>
                 </div>
+                <!-- Columna 4: Mapa de Google-->
                 <div>
-                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Newsletter</h4>
-                    <div class="flex">
-                        <input type="email" placeholder="Tu correo electrónico" 
-                               class="flex-1 px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:border-blue-900">
-                        <button class="bg-blue-900 text-white px-6 py-2 rounded-r-full hover:bg-blue-800 transition-colors">
-                            →
-                        </button>
+                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Ubicación</h4>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.738296420991!2d-79.71287432498237!3d8.926766591130544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca244f261edf3%3A0xd3705f95fa59230e!2sCentro%20Educativo%20Biling%C3%BCe%20Visi%C3%B3n%20del%20Saber!5e0!3m2!1ses-419!2scr!4v1741731783909!5m2!1ses-419!2scr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600">
-                <p>© 2025 Colegio Visión del Saber. Todos los derechos reservados.</p>
+                <p>© 2025 Centro Educativo Bilingüe Visión del Saber. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -244,6 +234,25 @@
             // Aquí puedes agregar la lógica para enviar el formulario
             alert('Mensaje enviado con éxito. Nos pondremos en contacto contigo pronto.');
             form.reset();
+        });
+    </script>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('menu').classList.add('hidden');
+        });
+
+        // Opcional: Cierra el menú al hacer clic en un enlace (en móviles)
+        document.querySelectorAll('.menu-navegacion').forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 768) { // Solo en móviles
+                    document.getElementById('menu').classList.add('hidden');
+                }
+            });
         });
     </script>
 </body>

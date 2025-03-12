@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - CE Visión del Saber</title>
+    <title>Inicio</title>
     <link rel="icon" href="imagenes/logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Lucide Icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
-    <!-- React y ReactDOM -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <!-- Babel para JSX -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.2/babel.min.js"></script>
 </head>
+
 <body>
+    <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-20">
@@ -34,8 +33,7 @@
                     <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
                     <a href="somosvision.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Somos Visión</a>
                     <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
-                    <a href="#oferta-educativa" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
-                    <a href="#plataformas" class="menu-navegacion hover:text-yellow-500 transition-colors">Plataformas</a>
+                    <a href="ofertaeducativa.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
                     <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
                     <!-- Botón para cerrar en móviles -->
                     <button id="close-menu" class="md:hidden mt-8 text-gray-200 text-lg underline">Cerrar</button>
@@ -81,7 +79,7 @@
     </section>
 
     
-    <!-- Noticias -->
+    <!-- Sección: Noticias -->
     <section id="noticias" class="bg-gray-50 py-20">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -92,19 +90,19 @@
                 <!-- Noticia 1 -->
                 <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
                         <div class="contenedor-imagen-noticia relative h-64">
-                        <img src="https://placehold.co/400x250" alt="Feria de Ciencias 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="imagenes/welcomeback.png" alt="Feria de Ciencias 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
-                            Evento
+                            Noticia
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-blue-900 mb-2">
-                            Feria de Ciencias 2025
+                            Welcome Back Students
                         </h3>
                         <p class="text-gray-600 mb-4">
-                            Nuestros estudiantes presentarán proyectos innovadores...
+                            Un nuevo año escolar comienza, lleno de oportunidades para aprender, crecer y brillar. Este 2025, cada estudiante vivirá grandes experiencias, descubrirá su potencial y encontrará alegría en cada paso del camino...
                         </p>
-                        <a href="#" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors">
+                        <a href="https://www.instagram.com/p/DHBB6a3u0Gu/" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors" target="_blank">
                             Leer más →
                         </a>
                     </div>
@@ -112,19 +110,20 @@
                 <!-- Noticia 2 -->
                 <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
                         <div class="contenedor-imagen-noticia relative h-64">
-                        <img src="https://placehold.co/400x250" alt="Robótica 2024" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="imagenes/WRO.png" alt="Robótica 2024" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
                             Evento
                         </div>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-semibold text-blue-900 mb-2">
-                            Robótica 2024
+                            World Robot Olympiad (WRO) 2024
                         </h3>
                         <p class="text-gray-600 mb-4">
-                            Nuestros estudiantes participaron de...
+                            Nos llena de orgullo compartir que 8 equipos panameños de diferentes edades nos estarán representando en la gran final internacional de la World Robot Olympiad (WRO) 2024, que se llevará a cabo en Turquía...
+...
                         </p>
-                        <a href="#" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors">
+                        <a href="https://www.instagram.com/p/DC5oPh-Nqke/" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors" target="_blank">
                             Leer más →
                         </a>
                     </div>
@@ -132,7 +131,7 @@
                 <!-- Noticia 3 -->
                 <div class="tarjeta-noticia bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-full flex flex-col">
                         <div class="contenedor-imagen-noticia relative h-64">
-                        <img src="https://placehold.co/400x250" alt="VDS Panthers 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="imagenes/vdspanthers.png" alt="VDS Panthers 2025" class="imagen-noticia w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute top-4 left-4 bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
                             Evento
                         </div>
@@ -142,9 +141,11 @@
                             VDS Panthers 2025
                         </h3>
                         <p class="text-gray-600 mb-4">
-                            Conoce nuestra increíble banda...
+                            Una Semana Llena de Aprendizaje e Inspiración
+
+                            La semana pasada fue increíblemente enriquecedora para nuestro equipo docente. Nos sumergimos en capacitaciones....
                         </p>
-                        <a href="#" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors">
+                        <a href="https://www.instagram.com/p/DGME_1Qv-yq/?img_index=1" class="text-yellow-500 font-semibold group-hover:text-blue-900 transition-colors" target="_blank">
                             Leer más →
                         </a>
                     </div>                    
@@ -153,7 +154,7 @@
         </div>
     </section>
     
-    <!-- Actividades Extracurriculares -->
+    <!-- Sección: Actividades Extracurriculares -->
     <section id="actividades" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -162,6 +163,7 @@
                     En Visión del Saber fomentamos el desarrollo integral a través de diversas actividades donde nuestros estudiantes pueden destacar y desarrollar sus talentos.
                 </p>
             </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <!-- Deportes -->
                 <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
@@ -202,7 +204,7 @@
                 <!-- Club de Robótica -->
                 <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                     <div class="h-52 overflow-hidden">
-                        <img src="https://placehold.co/400x250" alt="Club de Robótica" class="w-full h-full object-cover">
+                        <img src="imagenes/robotica.jpg" alt="Club de Robótica" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 text-center">
                         <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
@@ -238,7 +240,7 @@
                 <!-- Medios Estudiantiles -->
                 <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                     <div class="h-52 overflow-hidden">
-                        <img src="https://placehold.co/400x250" alt="Medios Estudiantiles" class="w-full h-full object-cover">
+                        <img src="imagenes/medios.jpg" alt="Medios Estudiantiles" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 text-center">
                         <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
@@ -257,14 +259,14 @@
         </div>
     </section>
 
-    <!-- Plataformas Educativas -->
+    <!-- Sección: Plataformas Educativas -->
     <section id="plataformas" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Nuestras Plataformas Educativas</h2>
-                <br><br><br><br>
+                <br>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-center items-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-20 justify-center items-center">
                 <img src="imagenes/mereb-logo.png" alt="iMEREB" class="h-auto w-auto ">
                 <img src="imagenes/google-workspace.png" alt="Google Workspace" class="h-auto w-auto">
                 <img src="imagenes/hmh-logo.png" alt="HMH Harcourt" class="h-auto w-auto">
@@ -275,7 +277,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="bg-blue-900 py-20">
+    <section id="calltoaction" class="bg-blue-900 py-20">
         <div class="container mx-auto px-4 text-center">
             <!-- Contenedor exclusivo para la imagen -->
             <div class="flex justify-center mb-8">
@@ -292,42 +294,51 @@
     
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-4 py-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Columna 1 -->
+                <!-- Columna 1: Redes Sociales -->
                 <div class="space-y-4">
                     <div class="flex items-center space-x-2">
-                        <i class="lucide-graduation-cap text-blue-900 h-6 w-6"></i>
-                        <span class="text-xl font-bold text-blue-900">Visión del Saber</span>
+                        <span class="text-xl font-bold text-blue-900">¡Siguenos en Nuestras Redes Sociales!</span>
+                    </div><br>
+                    <div class="grid grid-cols-6 gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=100068060809682" target="_blank"><img src="imagenes/facebook.png" alt="Facebook" class="h-10 w-10"></a>
+                        <a href="https://www.instagram.com/visiondelsaber_/" target="_blank"><img src="imagenes/instagram.png" alt="Instagram" class="h-10 w-10"></a>
+                        <a href="https://x.com/visiondelsaber" target="_blank"><img src="imagenes/x.png" alt="X" class="h-10 w-10"></a>
+                        <a href="https://www.youtube.com/@visiondelsaber" target="_blank"><img src="imagenes/youtube.png" alt="Youtube" class="h-10 w-10"></a>
+                        <a href="https://api.whatsapp.com/message/YBNWT62A2HKYG1?autoload=1&app_absent=0" target="_blank"><img src="imagenes/whatsapp.png" alt="Whatsapp" class="h-10 w-10"></a>
                     </div>
-                    <p class="text-gray-600">
-                        Formando líderes con excelencia y valores desde 1995.
-                    </p>
                 </div>
-
-                <!-- Columna 3: Datos de Contacto -->
+    
+                <!-- Columna 2: Datos de Contacto -->
                 <div>
-                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Contacto</h4>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-bold text-blue-900">Contacto:</span>
+                    </div><br>
                     <ul class="space-y-2 text-gray-600">
                         <li>Vista Alegre, Panamá</li>
                         <li>Correo: info@visiondelsaber.edu.pa</li>
-                        <li>Tel: +507 XXX-XXXX</li>
+                        <li>Tel: +507 6341‑7573</li>
                     </ul>
                 </div>
-                <!-- Columna 4: Mapa de Google-->
+                
+                <!-- Columna 3: Mapa de Google-->
                 <div>
-                    <h4 class="text-lg font-semibold text-blue-900 mb-4">Ubicación</h4>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-bold text-blue-900">Ubicación:</span>
+                    </div><br>
                     <div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.738296420991!2d-79.71287432498237!3d8.926766591130544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca244f261edf3%3A0xd3705f95fa59230e!2sCentro%20Educativo%20Biling%C3%BCe%20Visi%C3%B3n%20del%20Saber!5e0!3m2!1ses-419!2scr!4v1741731783909!5m2!1ses-419!2scr" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
+            
             <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600">
                 <p>© 2025 Centro Educativo Bilingüe Visión del Saber. Todos los derechos reservados.</p>
             </div>
-        </div>
     </footer>
 
+    <!-- Script del Menu Hamburgesa-->
     <script>
         document.getElementById('menu-btn').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('hidden');
@@ -344,6 +355,13 @@
                     document.getElementById('menu').classList.add('hidden');
                 }
             });
+        });
+    </script>
+
+    <!-- Script Para Inhabilitar Click derecho-->
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
         });
     </script>
 </body>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.2/babel.min.js"></script>
+</head>
+
+<body>
+        <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <img src="imagenes/panama.png" alt="Panamá" class="h-12 w-auto object-contain">
+                    <img src="imagenes/logo.png" alt="Logo Visión del Saber" class="h-12 w-auto object-contain">                    
+                </div>
+        <!-- Botón del Menú hamburguesa -->
+                <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden p-2 bg-yellow-500 text-blue-900 rounded-md focus:outline-none z-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+                <!-- Menú de Navegación -->
+                <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
+                    <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
+                    <a href="somosvision.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Somos Visión</a>
+                    <a href="admisiones.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="ofertaeducativa.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
+                    <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
+                        <!-- Botón para cerrar en móviles -->
+                    <button id="close-menu" class="md:hidden mt-8 text-gray-200 text-lg underline">Cerrar</button>
+                </nav>
+            </div>
+        </div>
+    </header>  
+    
+    <!-- Menú móvil -->
+    <div class="mobile-menu fixed inset-0 bg-blue-900 z-40 transform translate-x-full transition-transform duration-300">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="index.html#inicio" class="text-white text-2xl hover:text-yellow-500 transition-colors">Inicio</a>
+            <a href="index.html#programas" class="text-white text-2xl hover:text-yellow-500 transition-colors">Programas</a>
+            <a href="index.html#admisiones" class="text-white text-2xl hover:text-yellow-500 transition-colors">Admisiones</a>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="pt-20">
+        <!-- Sección de Admisión -->
+        <section id="admisiones" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Proceso de Admisión</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Conoce los pasos para ser parte de nuestra comunidad educativa.
+                </p>
+                
+                <!-- Pasos del proceso -->
+                <div class="grid md:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">1. Solicitud</h3>
+                        <p class="text-gray-700">Completa el formulario en línea o visítanos en nuestras instalaciones.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">2. Evaluación</h3>
+                        <p class="text-gray-700">Agendar una entrevista y evaluación académica para el estudiante.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">3. Inscripción</h3>
+                        <p class="text-gray-700">Realizar el pago de inscripción y entregar los documentos requeridos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Requisitos de Inscripción -->
+        <section id="requisitos" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Requisitos de Inscripción</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Asegúrate de cumplir con los siguientes requisitos antes de iniciar el proceso de inscripción.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">📄 Copia del DNI o Pasaporte</h3>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">📚 Certificado de estudios del último año</h3>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">🩺 Certificado médico</h3>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">📃 Formulario de inscripción</h3>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">📸 2 Fotos tamaño carnet</h3>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold text-blue-900">💳 Comprobante de pago de inscripción</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Costos Educativos -->
+        <section id="costos" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Costos Educativos</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Descubre nuestras tarifas y planes de pago para el ciclo escolar.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">💰 Inscripción</h3>
+                        <p class="text-gray-700">Costo: <strong>$250</strong></p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">📚 Mensualidad</h3>
+                        <p class="text-gray-700">Costo: <strong>$180/mes</strong></p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-900 mb-2">🎓 Material Escolar</h3>
+                        <p class="text-gray-700">Costo: <strong>$100</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Columna 1: Redes Sociales -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-bold text-blue-900">¡Siguenos en Nuestras Redes Sociales!</span>
+                    </div><br>
+                    <div class="grid grid-cols-6 gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=100068060809682" target="_blank"><img src="imagenes/facebook.png" alt="Facebook" class="h-10 w-10"></a>
+                        <a href="https://www.instagram.com/visiondelsaber_/" target="_blank"><img src="imagenes/instagram.png" alt="Instagram" class="h-10 w-10"></a>
+                        <a href="https://x.com/visiondelsaber" target="_blank"><img src="imagenes/x.png" alt="X" class="h-10 w-10"></a>
+                        <a href="https://www.youtube.com/@visiondelsaber" target="_blank"><img src="imagenes/youtube.png" alt="Youtube" class="h-10 w-10"></a>
+                        <a href="https://api.whatsapp.com/message/YBNWT62A2HKYG1?autoload=1&app_absent=0" target="_blank"><img src="imagenes/whatsapp.png" alt="Whatsapp" class="h-10 w-10"></a>
+                    </div>
+                </div>
+    
+                <!-- Columna 2: Datos de Contacto -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-bold text-blue-900">Contacto:</span>
+                    </div><br>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Vista Alegre, Panamá</li>
+                        <li>Correo: info@visiondelsaber.edu.pa</li>
+                        <li>Tel: +507 6341‑7573</li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Mapa de Google-->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-bold text-blue-900">Ubicación:</span>
+                    </div><br>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.738296420991!2d-79.71287432498237!3d8.926766591130544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca244f261edf3%3A0xd3705f95fa59230e!2sCentro%20Educativo%20Biling%C3%BCe%20Visi%C3%B3n%20del%20Saber!5e0!3m2!1ses-419!2scr!4v1741731783909!5m2!1ses-419!2scr" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600">
+                <p>© 2025 Centro Educativo Bilingüe Visión del Saber. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+    <!-- Script del Menu Hamburgesa -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('menu').classList.add('hidden');
+        });
+
+        // Opcional: Cierra el menú al hacer clic en un enlace (en móviles)
+        document.querySelectorAll('.menu-navegacion').forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 768) { // Solo en móviles
+                    document.getElementById('menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -12,6 +12,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js";
     </script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
@@ -31,7 +32,7 @@
                 <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
                     <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
                     <a href="somosvision.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Somos Visión</a>
-                    <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="admisiones.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
                     <a href="ofertaeducativa.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
                     <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
                     <!-- Botón para cerrar en móviles -->
@@ -42,82 +43,85 @@
     </header>  
 
     <!-- Main -->
-    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-900 to-blue-700 text-white text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold">Nuestra Oferta Educativa</h1>
-            <p class="mt-4 text-lg max-w-2xl mx-auto">
-                Descubre nuestros niveles educativos y metodología de enseñanza adaptada para formar líderes del mañana.
-            </p>
-        </div>
-    </section>
+    <main>
+        <!-- Main -->
+        <section class="pt-32 pb-16 bg-gradient-to-br from-blue-900 to-blue-700 text-white text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold">Nuestra Oferta Educativa</h1>
+                <p class="mt-4 text-lg max-w-2xl mx-auto">
+                    Descubre nuestros niveles educativos y metodología de enseñanza adaptada para formar líderes del mañana.
+                </p>
+            </div>
+        </section>
 
-    <!-- Niveles Educativos -->
-    <section class="container mx-auto px-4 py-10">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Preescolar -->
-            <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
-                <img src="imagenes/preeschool.webp" alt="Preescolar" class="w-full h-48 object-cover rounded-lg">
-                <h2 class="text-2xl font-bold text-blue-900 mt-4">Preescolar</h2>
-                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="mt-6 text-center">
-                    <a href="pdf/preescolar.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                        Descargar PDF
-                    </a>
+        <!-- Niveles Educativos -->
+        <section class="container mx-auto px-4 py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Preescolar -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
+                    <img src="imagenes/preeschool.webp" alt="Preescolar" class="w-full h-48 object-cover rounded-lg">
+                    <h2 class="text-2xl font-bold text-blue-900 mt-4">Preescolar</h2>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="mt-6 text-center">
+                        <a href="pdf/preescolar.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Primaria -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
+                    <img src="imagenes/primaria.jpg" alt="Primaria" class="w-full h-48 object-cover rounded-lg">
+                    <h2 class="text-2xl font-bold text-blue-900 mt-4">Primaria</h2>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div class="mt-6 text-center">
+                        <a href="pdf/primaria.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Secundaria -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
+                    <img src="imagenes/secundaria.jpg" alt="Secundaria" class="w-full h-48 object-cover rounded-lg">
+                    <h2 class="text-2xl font-bold text-blue-900 mt-4">Secundaria</h2>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="mt-6 text-center">
+                        <a href="pdf/secundaria.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
+                            Descargar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bachillerato en Ciencias -->
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
+                    <img src="imagenes/bachillerato.jpg" alt="Bachillerato" class="w-full h-48 object-cover rounded-lg">
+                    <h2 class="text-2xl font-bold text-blue-900 mt-4">Bachillerato en Ciencias</h2>
+                    <p class="text-gray-600 mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="mt-6 text-center">
+                        <a href="pdf/bachillerato.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
+                            Descargar PDF
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Primaria -->
-            <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
-                <img src="imagenes/primaria.jpg" alt="Primaria" class="w-full h-48 object-cover rounded-lg">
-                <h2 class="text-2xl font-bold text-blue-900 mt-4">Primaria</h2>
-                <p class="text-gray-600 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="mt-6 text-center">
-                    <a href="pdf/primaria.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                        Descargar PDF
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Secundaria -->
-            <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
-                <img src="imagenes/secundaria.jpg" alt="Secundaria" class="w-full h-48 object-cover rounded-lg">
-                <h2 class="text-2xl font-bold text-blue-900 mt-4">Secundaria</h2>
-                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <div class="mt-6 text-center">
-                    <a href="pdf/secundaria.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                        Descargar PDF
-                    </a>
-                </div>
+        </section>
+
+        <!-- PDF Reglamento Interno -->
+        <section class="py-20 bg-white flex flex-col items-center">
+            <!-- Contenedor con tamaño máximo -->
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-900">Reglamento Institucional</h1><br><br>
+            <div class="w-300 max-w-[300px] h-300 max-h-[300px] overflow-hidden border border-gray-300 rounded-lg shadow-lg">
+                <canvas id="pdfViewer" class="w-full"></canvas>
             </div>
 
-            <!-- Bachillerato en Ciencias -->
-            <div class="bg-white shadow-lg rounded-lg p-6 text-center border">
-                <img src="imagenes/bachillerato.jpg" alt="Bachillerato" class="w-full h-48 object-cover rounded-lg">
-                <h2 class="text-2xl font-bold text-blue-900 mt-4">Bachillerato en Ciencias</h2>
-                <p class="text-gray-600 mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <div class="mt-6 text-center">
-                    <a href="pdf/bachillerato.pdf" download class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-                        Descargar PDF
-                    </a>
-                </div>
+            <div class="flex justify-center space-x-4 my-4">
+                <button id="prevPage" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md hover:bg-blue-700">Anterior</button>
+                <span id="pageInfo" class="text-blue-900 font-semibold items-center flex"></span>
+                <button id="nextPage" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md hover:bg-blue-700">Siguiente</button>
             </div>
-        </div>
-    </section>
-
-    <!-- PDF Reglamento Interno -->
-    <section class="py-20 bg-white flex flex-col items-center">
-        <!-- Contenedor con tamaño máximo -->
-        <h1 class="text-4xl md:text-5xl font-bold text-blue-900">Reglamento Institucional</h1><br><br>
-        <div class="w-300 max-w-[300px] h-300 max-h-[300px] overflow-hidden border border-gray-300 rounded-lg shadow-lg">
-            <canvas id="pdfViewer" class="w-full"></canvas>
-        </div>
-
-        <div class="flex justify-center space-x-4 my-4">
-            <button id="prevPage" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md hover:bg-blue-700">Anterior</button>
-            <span id="pageInfo" class="text-blue-900 font-semibold items-center flex"></span>
-            <button id="nextPage" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md hover:bg-blue-700">Siguiente</button>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
@@ -165,7 +169,7 @@
             </div>
     </footer>
 
-    <!--Script de Menú Hamburgesa-->
+    <!-- Script de Menú Hamburgesa -->
     <script>
         document.getElementById('menu-btn').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('hidden');
@@ -185,7 +189,7 @@
         });
     </script>
 
-    <!--Script que da el PDF de Reglamento-->
+    <!-- Script que da el PDF de Reglamento -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const url = "pdf/Reglamentointerno.pdf";
@@ -245,13 +249,6 @@
                 if (pdfDoc) renderPage(pageNum);
             });
         });
-    </script>
-
-    <!-- Script Para Inhabilitar Click derecho-->
-    <script>
-        document.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-        });
-    </script>    
+    </script> 
 </body>
 </html>

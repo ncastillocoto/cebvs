@@ -10,6 +10,7 @@
     <!-- Lucide Icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
@@ -29,7 +30,7 @@
                 <nav id="menu" class="hidden fixed inset-0 bg-blue-900 bg-opacity-95 flex flex-col items-center justify-center w-full h-full gap-6 text-white text-2xl transition-all duration-300 md:flex md:relative md:flex-row md:items-center md:space-x-8 md:bg-transparent md:text-blue-900 md:text-base">
                     <a href="index.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Inicio</a>
                     <a href="somosvision.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Somos Visión</a>
-                    <a href="#admisiones" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
+                    <a href="admisiones.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Admisiones</a>
                     <a href="ofertaeducativa.html" class="menu-navegacion hover:text-yellow-500 transition-colors">Oferta Educativa</a>
                     <a href="contacto.html" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition-colors">Contáctanos</a>
                     <!-- Botón para cerrar en móviles -->
@@ -39,6 +40,7 @@
         </div>
     </header>  
 
+    <!-- Main -->
     <main class="pt-24 container mx-auto px-4">
         <!--Main Inicial-->
         <section class="text-center">
@@ -54,30 +56,32 @@
             </div>
 
             <br><br><br>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-top">
+                <!-- Nuestra Visión -->
                 <div>
                     <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Visión</h2>
-                    <p class="text-gray-600 mt-4 text-center">
+                    <p class="text-gray-600 mt-4 text-justify">
                         Ser la Institución de mayor renombre a nivel nacional e internacional, brindando así, las herramientas tecnológicas, intelectuales, sociales y morales; para que los estudiantes puedan tener un excelente criterio de discernimiento racional–emocional sobre lo que deseen ser.
                         De esta forma nos daremos a conocer desde el nivel Pre–Escolar al universitario; siendo el idioma Inglés uno de los pilares fundamentales de nuestro proceso de enseñanza–aprendizaje.
-                        Tomando como base estos planteamientos, nos especializamos en formar estudiantes capaces de aplicar el razonamiento crítico, reflexivo y analítico, construyendo así su propia identidad en la que se pueda lograr el desarrollo de sus habilidades y destrezas, haciendo frente a las exigencias de la educación de nuestros tiempos.
+                        <br><br>Tomando como base estos planteamientos, nos especializamos en formar estudiantes capaces de aplicar el razonamiento crítico, reflexivo y analítico, construyendo así su propia identidad en la que se pueda lograr el desarrollo de sus habilidades y destrezas, haciendo frente a las exigencias de la educación de nuestros tiempos.
 
                     </p>
                 </div>
+                <!-- Nuestra Misión -->
                 <div>
                     <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Misión</h2>
-                    <p class="text-gray-600 mt-4 text-center">
+                    <p class="text-gray-600 mt-4 text-justify">
                         Para lograr un óptimo nivel de aprendizaje adecuado a las exigentes demandas del nuevo milenio, nuestro centro educativo aplica los recursos de la tecnología, nuevos métodos y técnicas en la enseñanza del inglés y proveemos la capacitación de los docentes en las últimas estrategias educativas dirigidos a orientar un proceso interactivo de enseñanza–aprendizaje que garanticen el desarrollo integral del individuo con un sentido de responsabilidad hacia la formación y la práctica de los valores cívicos, éticos y morales.                    </p>
                 </div>
             </div>
         </section>
 
-        <!--Historia-->
+        <!-- Historia -->
         <section class="mt-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h2 class="text-3xl font-bold text-blue-900 text-center">Nuestra Historia</h2>
-                    <p class="text-gray-600 mt-4 text-center">
+                    <p class="text-gray-600 mt-4 text-justify">
                         El Centro Educativo Bilingüe Visión del Saber situado en el corregimiento de
                         Vista Alegre, distrito de Arraiján, inicia sus labores educativas, en Marzo
                         de 2003, teniendo una excelente acogida en la comunidad de Vista Alegre
@@ -206,13 +210,6 @@
                     document.getElementById('menu').classList.add('hidden');
                 }
             });
-        });
-    </script>
-
-    <!-- Script Para Inhabilitar Click derecho-->
-    <script>
-        document.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
         });
     </script>
 </body>

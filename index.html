@@ -166,113 +166,169 @@
         <!-- Sección: Actividades Extracurriculares -->
         <section id="actividades" class="py-20 bg-white">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Actividades Extracurriculares</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        En Visión del Saber fomentamos el desarrollo integral a través de diversas actividades donde nuestros estudiantes pueden destacar y desarrollar sus talentos.
-                    </p>
+              <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Actividades Extracurriculares</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                  En Visión del Saber fomentamos el desarrollo integral a través de diversas actividades donde nuestros estudiantes pueden destacar y desarrollar sus talentos.
+                </p>
+              </div>
+          
+              <!-- Sección de Actividades-->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+          
+                <!-- Banda de Música -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/banda.png" alt="Banda de Música" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-music text-blue-900 h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">BANDA DE MÚSICA</h3>
+                    <button onclick="openModal('modalBanda')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
                 </div>
-
-                <!-- Sección de Actividades-->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
-                    <!-- Banda de Música -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/banda.png" alt="Banda de Música" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-music text-blue-900 h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">BANDA DE MÚSICA</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Club de Robótica -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/robotica.png" alt="Club de Robótica" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-cpu text-white h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE ROBÓTICA</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Deportes -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/deportes.JPG" alt="Deportes" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-dumbbell text-white h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE DEPORTES</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Club de Ciencias -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/clubciencias.jpg" alt="Club de Ciencias" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-flask-conical text-blue-900 h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE CIENCIAS</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Coro Musical -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/Coro.jpg" alt="Medios Estudiantiles" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-camera text-white h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE <br>CORO</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Medios Estudiantiles -->
-                    <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="h-52 overflow-hidden">
-                            <img src="imagenes/medios.jpg" alt="Medios Estudiantiles" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6 text-center">
-                            <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
-                                <i class="lucide-camera text-white h-8 w-8"></i>
-                            </div>
-                            <h3 class="text-l font-bold text-blue-900 mb-3">MEDIOS ESTUDIANTILES</h3>
-                            <a href="#" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
-                                Conoce más →
-                            </a>
-                        </div>
-                    </div>
+          
+                <!-- Modal Banda -->
+                <div id="modalBanda" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalBanda')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Banda de Música</h2>
+                    <p class="text-gray-700">Un espacio donde los estudiantes desarrollan sus habilidades musicales y trabajan en equipo interpretando piezas modernas y clásicas.</p>
+                  </div>
                 </div>
+          
+                <!-- Club de Robótica -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/robotica.png" alt="Club de Robótica" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-cpu text-white h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE ROBÓTICA</h3>
+                    <button onclick="openModal('modalRobotica')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
+                </div>
+          
+                <!-- Modal Robótica -->
+                <div id="modalRobotica" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalRobotica')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Club de Robótica</h2>
+                    <p class="text-gray-700">Aquí los estudiantes diseñan, ensamblan y programan robots para competencias y proyectos innovadores que despiertan su creatividad tecnológica.</p>
+                  </div>
+                </div>
+          
+                <!-- Deportes -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/deportes.JPG" alt="Deportes" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-dumbbell text-white h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE DEPORTES</h3>
+                    <button onclick="openModal('modalDeportes')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
+                </div>
+          
+                <!-- Modal Deportes -->
+                <div id="modalDeportes" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalDeportes')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Club de Deportes</h2>
+                    <p class="text-gray-700">Fomentamos la actividad física mediante entrenamientos y competencias en disciplinas como fútbol, atletismo, baloncesto y más.</p>
+                  </div>
+                </div>
+          
+                <!-- Club de Ciencias -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/clubciencias.jpg" alt="Club de Ciencias" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-flask-conical text-blue-900 h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE CIENCIAS</h3>
+                    <button onclick="openModal('modalCiencias')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
+                </div>
+          
+                <!-- Modal Ciencias -->
+                <div id="modalCiencias" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalCiencias')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Club de Ciencias</h2>
+                    <p class="text-gray-700">Exploramos el mundo natural a través de experimentos, proyectos y ferias científicas que estimulan la curiosidad y el pensamiento crítico.</p>
+                  </div>
+                </div>
+          
+                <!-- Coro Musical -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/Coro.jpg" alt="Coro Musical" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-mic text-white h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">CLUB DE <br>CORO</h3>
+                    <button onclick="openModal('modalCoro')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
+                </div>
+          
+                <!-- Modal Coro -->
+                <div id="modalCoro" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalCoro')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Club de Coro</h2>
+                    <p class="text-gray-700">Un espacio para expresarte a través del canto coral. Aquí fortaleces tu voz, ritmo y sensibilidad musical mientras trabajas en armonía con otros estudiantes.</p>
+                  </div>
+                </div>
+          
+                <!-- Medios Estudiantiles -->
+                <div class="actividad-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  <div class="h-52 overflow-hidden">
+                    <img src="imagenes/medios.jpg" alt="Medios Estudiantiles" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-6 text-center">
+                    <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto -mt-14 mb-4 border-4 border-white shadow-md relative z-10">
+                      <i class="lucide-camera text-white h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-l font-bold text-blue-900 mb-3">MEDIOS ESTUDIANTILES</h3>
+                    <button onclick="openModal('modalMedios')" class="inline-block text-yellow-500 font-semibold hover:text-blue-900 transition-colors text-sm">
+                      Conoce más →
+                    </button>
+                  </div>
+                </div>
+          
+                <!-- Modal Medios -->
+                <div id="modalMedios" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                  <div class="bg-white rounded-xl p-6 w-11/12 max-w-md relative shadow-xl">
+                    <button onclick="closeModal('modalMedios')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+                    <h2 class="text-blue-900 text-xl font-bold mb-4">Medios Estudiantiles</h2>
+                    <p class="text-gray-700">Participa como reportero, fotógrafo o editor. Comparte los logros del colegio y cubre los eventos más importantes en nuestras plataformas digitales.</p>
+                  </div>
+                </div>
+          
+              </div>
             </div>
-        </section>
+        </section>          
 
         <!-- Sección: Plataformas Educativas -->
         <section id="plataformas" class="py-20 bg-white">
@@ -372,6 +428,17 @@
                 }
             });
         });
+    </script>
+
+    <!-- Ventana Pop-up -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
     </script>
 </body>
 </html>
